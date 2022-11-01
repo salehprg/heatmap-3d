@@ -11,3 +11,4 @@ jobs:
       -
         name: Start http-server
         run: http-server -p 8282
+        # Test
