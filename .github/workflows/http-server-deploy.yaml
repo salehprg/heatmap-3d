@@ -9,6 +9,11 @@ jobs:
         name: Checkout
         uses: actions/checkout@v3
       -
-        name: Start http-server
-        run: http-server -p 8282 .
-        # Test
+        name: Serve Files
+        uses: Eun/http-server-action@v1
+        with:
+          directory: ${{ github.workspace }}
+          port: 8282
+          no-cache: false
+          index-files: |
+            ["index.html", "index.htm"]
