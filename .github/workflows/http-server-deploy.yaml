@@ -15,5 +15,5 @@ jobs:
           directory: ${{ github.workspace }}
           port: 8282
           no-cache: false
-          index-files: |
-            ["index.html", "index.htm"]
+      -
+        run: curl -vvvv http://localhost:8282/index.html
