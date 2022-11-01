@@ -1,0 +1,13 @@
+name: http-server-deploy
+run-name: ${{ github.actor }} is deploying with http-server
+on: [push]
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
+      -
+        name: Start http-server
+        run: http-server -p 8282
