@@ -10,4 +10,4 @@ verify the container is running.
 docker ps
 ```
 
-open at http://<server-ip>:8282
+open at `http://<server-ip>:8282`
