@@ -11,3 +11,6 @@ docker ps
 ```
 
 open at `http://<server-ip>:8282`
+
+# How to Use application
+https://github.com/smart-construction-group/heatmap-3d/wiki
